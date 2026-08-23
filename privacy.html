@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — SheetTidy</title>
+<meta name="description" content="SheetTidy does not collect, store or transmit your spreadsheet data. This page explains exactly what is and is not stored.">
+<style>
+  :root { --ink:#202124; --muted:#5f6368; --line:#dadce0; --blue:#1a73e8; --wash:#f8f9fa; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; color:var(--ink); line-height:1.65; background:#fff; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
+  header { border-bottom:1px solid var(--line); padding:18px 0; }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .logo { font-weight:600; font-size:17px; text-decoration:none; color:var(--ink); }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; font-size:14px; }
+  nav a:hover { color:var(--blue); }
+  h1 { font-size:30px; margin:44px 0 6px; font-weight:600; }
+  .updated { color:var(--muted); font-size:14px; margin:0 0 30px; }
+  h2 { font-size:19px; margin:36px 0 8px; font-weight:600; }
+  p, li { margin:0 0 13px; }
+  ul { padding-left:22px; }
+  .callout { background:var(--wash); border-radius:8px; padding:20px 22px; margin:24px 0; }
+  .callout p:last-child { margin-bottom:0; }
+  table { border-collapse:collapse; width:100%; margin:18px 0; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-weight:600; }
+  code { background:var(--wash); padding:1px 5px; border-radius:3px; font-size:14px; }
+  footer { border-top:1px solid var(--line); margin-top:52px; padding:26px 0 44px; font-size:13px; color:var(--muted); }
+  footer a { color:var(--muted); }
+  .tm { font-size:12px; margin-top:14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">SheetTidy</a>
+    <nav>
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: 20 August 2026</p>
+
+  <div class="callout">
+    <p>
+      <strong>The short version.</strong> SheetTidy does not collect, store or transmit the
+      contents of your spreadsheets. All the cleaning happens inside your own Google account.
+      The only thing that ever leaves your device is your licence key, sent to our payment
+      provider to check that it is valid. We do not operate a server, and there is no database
+      of users anywhere.
+    </p>
+  </div>
+
+  <p>
+    This policy explains what SheetTidy (“the add-on”, “we”, “us”) does and does not do with
+    your information. It applies to the SheetTidy add-on for Google Sheets™ and to this website.
+  </p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>We do not read, copy, upload, transmit or store the contents of your spreadsheets.</li>
+    <li>We do not have a server that your data could be sent to. There isn't one.</li>
+    <li>We do not use analytics, tracking pixels, advertising or third-party cookies.</li>
+    <li>We do not sell, rent or share personal information with anyone.</li>
+    <li>We do not build user profiles or mailing lists from your use of the add-on.</li>
+  </ul>
+
+  <h2>How the add-on accesses your spreadsheet</h2>
+  <p>
+    SheetTidy runs entirely on Google's servers, inside your own Google account, using Google
+    Apps Script. When you run a tool, it reads the cells in the spreadsheet you currently have
+    open, changes them, and writes them back. That data never travels to us and is never
+    retained anywhere outside your own file.
+  </p>
+  <p>
+    The add-on requests the <code>spreadsheets.currentonly</code> permission. This means it can
+    only ever access <strong>the single spreadsheet you have open at the time</strong>. It
+    cannot open, list, read or modify any other file in your Google Drive, even if it wanted to.
+    You can confirm this on the permission screen when you install.
+  </p>
+
+  <h2>What is stored, and where</h2>
+
+  <table>
+    <tr><th>Information</th><th>Where it is kept</th><th>Why</th></tr>
+    <tr>
+      <td>Your licence key</td>
+      <td>In your own Google account, using Apps Script user properties. Not on any server of ours.</td>
+      <td>So you don't have to re-enter it every time you open a spreadsheet.</td>
+    </tr>
+    <tr>
+      <td>An activation ID and status, and the date it was last checked</td>
+      <td>Same place — your own Google account.</td>
+      <td>To confirm your licence is valid without contacting the payment provider more than once a day.</td>
+    </tr>
+  </table>
+
+  <p>
+    That is the complete list. There is no other stored information, and none of it is
+    accessible to us.
+  </p>
+
+  <h2>The one outbound connection</h2>
+  <p>
+    When you enter a licence key, and at most once a day afterwards, the add-on contacts
+    <strong>Lemon Squeezy</strong> at <code>api.lemonsqueezy.com</code> to check whether the key
+    is valid.
+  </p>
+  <p>
+    What is sent: your licence key, and the word <code>SheetTidy</code> as a label.
+    <strong>Nothing else.</strong> No spreadsheet content, no file names, no email address, no
+    identifying information about you or your document.
+  </p>
+  <p>
+    If you never enter a licence key, the add-on makes no outbound connections at all.
+  </p>
+
+  <h2>Payments</h2>
+  <p>
+    Purchases are handled by <strong>Lemon Squeezy</strong>, which acts as the merchant of
+    record. If you buy a licence, they collect the information needed to process the payment —
+    typically your name, email address and billing details — under their own privacy policy,
+    at <a href="https://www.lemonsqueezy.com/privacy" rel="noopener">lemonsqueezy.com/privacy</a>.
+  </p>
+  <p>
+    We receive a record that a sale occurred and the email address associated with it, so that
+    we can provide support and reissue licence keys. We never see your card details.
+  </p>
+
+  <h2>Error reports</h2>
+  <p>
+    If the add-on encounters an unexpected error, Google's standard Apps Script logging records
+    the technical details — such as the error type and the line of code involved — in our Google
+    Cloud project. This is a built-in Google feature that helps us find and fix bugs.
+  </p>
+  <p>
+    These records contain technical diagnostics only. Our code does not place spreadsheet
+    contents into error messages. Google retains these logs according to its own policies.
+  </p>
+
+  <h2>This website</h2>
+  <p>
+    This site is hosted on GitHub Pages and consists of static pages. We set no cookies and run
+    no analytics. GitHub may record standard server access logs, such as IP addresses, as
+    described in the
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub privacy statement</a>.
+  </p>
+
+  <h2>Removing your information</h2>
+  <p>You can remove everything the add-on has stored at any time:</p>
+  <ul>
+    <li>Open the SheetTidy panel and use <strong>Remove licence</strong>, which deletes the stored key and activation details from your Google account; or</li>
+    <li>Uninstall the add-on from the Google Workspace Marketplace, which removes its access to your account entirely.</li>
+  </ul>
+  <p>
+    Because we do not hold your data on a server, there is nothing further for us to delete.
+    For information held by Lemon Squeezy in connection with a purchase, contact us at the
+    address below and we will help you make the request.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Depending on where you live, you may have rights to access, correct, delete or restrict the
+    use of personal information about you, and to object to its processing. Since the only
+    personal information connected to SheetTidy is held by our payment provider in relation to a
+    purchase, email us and we will assist you in exercising those rights.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    SheetTidy is a workplace productivity tool and is not directed at children under 13. We do
+    not knowingly collect personal information from children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the date at the top of this page will change and the updated version
+    will be posted here. If a change materially affects how your information is handled, we will
+    say so clearly on this page rather than quietly editing it.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy, or about privacy generally:
+    <strong>sheettidy@gmail.com</strong>
+  </p>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <a href="./">Home</a> ·
+      <a href="./support.html">Support</a> ·
+      <a href="./privacy.html">Privacy policy</a> ·
+      <a href="./terms.html">Terms of service</a>
+    </p>
+    <p>© 2026 Husain Mohamed Alalawi. All rights reserved.</p>
+    <p class="tm">Google Sheets™ and Google Workspace™ are trademarks of Google LLC. SheetTidy is not created by, affiliated with, or endorsed by Google.</p>
+  </div>
+</footer>
+
+</body>
+</html>
